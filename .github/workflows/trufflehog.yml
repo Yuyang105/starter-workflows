@@ -15,8 +15,8 @@ on:
     branches: [main]
 
 jobs:
-  test:
-    runs-on: ${{ matrix.os }} # runs a test on Ubuntu, Windows and macOS
+  sync:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: trufflehog-actions-scan
